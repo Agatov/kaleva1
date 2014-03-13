@@ -1,3 +1,21 @@
+.modal-dialog
+  .left
+    .subtitle
+      Заявка на рассчет стоимости
+    .content
+      В течение 10 минут с вами свяжется
+      %br
+      наш менеджер и рассчитает точную стоимость
+      %br
+      этой модели окна в необходимой для вас конфигурации
+
+  .right
+    %input{type: :text, name: :username, placeholder: 'Введите ваше имя'}
+    %input{type: :text, name: :phone, placeholder: 'Введите ваш телефон'}
+    %button.button.send-order{type: :modal}
+      Узнать цену
+
+
 .modal-overlay
 .modal-thank-you
   .modal-header
@@ -6,5 +24,5 @@
     Мы свяжемся с вами уже очень скоро.
 
 
-    %button#hide-thank-you
+    %button.button#hide-thank-you
       Я буду ждать!

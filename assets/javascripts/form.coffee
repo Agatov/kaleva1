@@ -1,9 +1,11 @@
 $ ->
 
-  $('#send-order').bind 'click', ->
+  $('.send-order').bind 'click', ->
 
-    username = $('input[name=username]')
-    phone = $('input[name=phone]')
+    p = $(@).parent()
+
+    username = p.find('input[name=username]')
+    phone = p.find('input[name=phone]')
 
     shake_fields = []
 
@@ -24,6 +26,10 @@ $ ->
       'order[phone]': phone.val()
 
     }, (data) =>
+
+
+    if $(@).attr('type') == 'modal'
+      $('.modal-dialog').hide()
 
 
     $('.modal-overlay').unbind 'click'
