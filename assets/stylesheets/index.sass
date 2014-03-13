@@ -1,0 +1,338 @@
+@font-face
+  font-family: 'HelveticaNeueCyr-Light'
+  src: url('/fonts/HelveticaNeueCyr-Light.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'HelveticaNeueCyr-Thin'
+  src: url('/fonts/HelveticaNeueCyr-Thin.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+
+body
+  padding: 0px
+  margin: 0px
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
+  background: #fff
+  min-width: 1024px
+
+
+.wrapper
+  width: 960px
+  margin: 0px auto
+
+.clearfix
+  &:after
+    clear: both
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+.relative
+  position: relative
+
+.inheritance-height
+  height: 100%
+
+
+input
+  width: 275px
+  height: 60px
+  text-align: center
+  border: none
+  outline: none
+  font-family: 'Helvetica Neue'
+  font-size: 15px
+  color: #666
+  border-radius: 5px
+  margin-right: 15px
+
+
+
+.button
+  width: 350px
+  height: 56px
+  line-height: 56px
+  text-align: center
+  font-size: 18px
+  font-family: 'HelveticaNeueCyr-Light'
+  color: #fff
+  text-transform: uppercase
+  border: 2px solid #fff
+  border-radius: 5px
+  cursor: pointer
+
+
+section
+  padding: 150px 0
+
+
+  &.about
+    background: -webkit-linear-gradient(top, #f6f7f8, #ffffff)
+
+  &.benefits-section
+    min-height: 600px
+    padding-top: 0px
+    background: -webkit-linear-gradient(top, #ffffff, #ffffff 80%, #f6f7f8 100%)
+
+    .wrapper
+      min-height: 600px
+      background: url('/images/kaleva_sample_bg.jpg') no-repeat
+      background-size: 440px
+
+
+  &.reasons
+    background: -webkit-linear-gradient(top, #f6f7f8, #ffffff)
+
+
+  &.blue-form
+    background: url('/images/form_window_mockup.jpg') no-repeat #008cd2
+    background-position: 125% 100%
+
+    .title
+      color: #fff
+
+  &.contacts
+    background: -webkit-linear-gradient(top, #f6f7f8 0%, #ffffff 50%, #f6f7f8 100%)
+
+
+  .title
+    padding-bottom: 50px
+    font-size: 48px
+    font-family: 'HelveticaNeueCyr-Thin'
+    color: #262626
+    line-height: 1.3
+
+
+
+.triggers
+  .trigger
+    float: left
+    width: 300px
+    margin-right: 20px
+
+    &.last
+      margin-right: 0px
+
+
+    .icon
+      width: 75px
+      height: 75px
+
+
+    .trigger-title
+      padding-top: 35px
+      padding-bottom: 26px
+      font-size: 24px
+      font-family: 'HelveticaNeueCyr-Light'
+      color: #262626
+      line-height: 1.3
+
+    .trigger-content
+      font-family: 'Helvetica Neue'
+      font-size: 15px
+      color: #666666
+      line-height: 1.3
+
+
+.benefits
+  float: right
+  width: 415px
+  margin-top: 35px
+
+  .title
+    padding-top: 0px
+    padding-bottom: 50px
+    font-size: 48px
+    font-family: 'HelveticaNeueCyr-Thin'
+    color: #262626
+    line-height: 1.3
+
+
+  .vertical-triggers
+
+    .vertical-trigger
+      margin-bottom: 50px
+
+      .trigger-title
+        padding-bottom: 20px
+        font-size: 24px
+        font-family: 'HelveticaNeueCyr-Light'
+        color: #262626
+
+      .trigger-content
+        font-family: 'Helvetica Neue'
+        font-size: 15px
+        color: #666666
+        line-height: 1.3
+
+
+
+.models
+  .models-title
+    padding-top: 0px
+    font-size: 48px
+    font-family: 'HelveticaNeueCyr-Thin'
+    color: #262626
+    line-height: 1.3
+
+
+  .links
+    padding-bottom: 70px
+    a
+      font-family: 'HelveticaNeueCyr-Thin'
+      font-size: 48px
+      line-height: 1.3
+      color: #b2b2b2
+      text-decoration: none
+
+      &.active
+        color: #008cd2
+
+
+
+.model
+  height: 440px
+
+  &.deco
+    background: url('/images/window_preview_1.jpg') no-repeat
+
+
+  .content
+    padding-top: 50px
+    padding-left: 400px
+
+    .model-name
+      padding-bottom: 50px
+      font-size: 48px
+      font-family: 'HelveticaNeueCyr-Thin'
+      color: #262626
+      line-height: 1.3
+
+
+    .model-bullets
+      font-family: 'Helvetica Neue'
+      font-size: 15px
+      color: #666
+      line-height: 1.7
+
+
+    .button
+      width: 230px
+      background: #008cd2
+      color: #fff
+      margin-top: 30px
+
+
+
+
+
+.form
+  .button
+    width: 230px
+    margin-left: 15px
+    background: none
+    height: 62px
+
+
+
+.offices
+  .office
+    width: 300px
+    float: left
+    margin-right: 20px
+    margin-bottom: 70px
+
+    &.bottom
+      margin-bottom: 0px
+
+
+    .name
+      font-family: 'HelveticaNeueCyr-Light'
+      font-size: 24px
+      color: #008cd2
+
+    .metro-title
+      font-family: 'Helvetica Neue'
+      font-size: 15px
+      color: #666
+      padding: 30px 0
+
+    .metro-stations
+      .metro
+        font-family: 'Helvetica Neue'
+        font-size: 15px
+        color: #262626
+        height: 20px
+        line-height: 20px
+        padding-left: 35px
+        margin-bottom: 10px
+        background: url('/images/metro_icon.png') no-repeat
+
+        .distance
+          color: #666
+
+
+    .phone
+      font-family: 'Helvetica Neue'
+      font-size: 15px
+      color: #666
+      padding-top: 25px
+      line-height: 1.3
+
+      .number
+        font-family: 'HelveticaNeueCyr-Light'
+        font-size: 24px
+        color: #262626
+
+
+    .address
+      font-family: 'Helvetica Neue'
+      font-size: 15px
+      color: #666
+      padding-top: 25px
+      line-height: 1.3
+
+      .street
+        color: #262626
+
+
+    .rejim
+      font-family: 'Helvetica Neue'
+      font-size: 15px
+      color: #666
+      padding-top: 25px
+      line-height: 1.3
+
+
+      .dates
+        padding-top: 25px
+        color: #262626
+
+
+
+.footer
+  background: #008cd2
+  height: 120px
+
+  .left
+    float: left
+    color: #fff
+    font-family: 'Helvetica Neue'
+    font-size: 15px
+    line-height: 1.3
+    padding-top: 35px
+
+  .right
+    float: right
+
+
+
+
+
+
+
