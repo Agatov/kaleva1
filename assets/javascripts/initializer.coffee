@@ -16,7 +16,7 @@ $ ->
     $(@).addClass('active')
 
     $('.model').hide()
-    $(".model[anchor=#{$(@).attr('rel')}").show()
+    $(".model[anchor=#{$(@).attr('rel')}]").show()
 
     false
 
