@@ -32,6 +32,9 @@ $ ->
       $('.modal-dialog').hide()
 
 
+    # Достигнута цель
+    reachGoal 'new_order'
+
     $('.modal-overlay').unbind 'click'
     $('.modal-overlay').bind 'click', ->
       hide_thank_you()
@@ -84,5 +87,6 @@ window.shake = (field, i) ->
 
 
 window.reachGoal = (goal) ->
+  yaCounter24506726.reachGoal goal
 
 
