@@ -4,9 +4,17 @@
       .logo
         %img{src: '/images/logo.jpg'}
       .phone
-        8 800 250 00 88
+        - phones = ["(495) 540-58-46", "(495) 662-96-24", "(495) 662-47-54", "(495) 540-58-34", "(495) 660-36-89"]
+        - sample_phone = phones.sample
+        = sample_phone
         .small
-          бесплатно по России
+          - if sample_phone == '(495) 662-96-24'
+            Режим работы c 10:00 до 20:00
+          - else
+            - if Time.now.wday == 0 or Time.now.wday == 6
+              Режим работы c 10:00 до 16:00
+            - else
+              Режим работы c 10:00 до 19:00
 
 
     .title
