@@ -50,7 +50,7 @@ class Application < Sinatra::Base
         port: 587,
         enable_starttls_auto: true,
         user_name: 'agatovs@gmail.com',
-        password: 'f1i4o9l2e4n9t'
+        password: 'f1i4o9l2e4n9t',
         authentication: :plain
       }
     })
