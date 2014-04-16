@@ -49,8 +49,8 @@ class Application < Sinatra::Base
         address: 'smtp.gmail.com',
         port: 587,
         enable_starttls_auto: true,
-        user_name: 'agatovs@gmail.com',
-        password: 'f1i4o9l2e4n9t',
+        user_name: 'kaleva.mailer',
+        password: 'poi91qwe',
         authentication: :plain
       }
     })

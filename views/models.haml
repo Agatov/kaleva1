@@ -3,7 +3,9 @@
     .models-title
       Модельный ряд:
     .links
-      %a.active{href: '#', rel: :vita} Vita,
+      %a.active{href: '#', rel: :standart} Standart,
+      = ' &nbsp; '
+      %a{href: '#', rel: :vita} Vita,
       = ' &nbsp; '
       %a{href: '#', rel: :design} Design,
       = ' &nbsp; '
@@ -12,6 +14,26 @@
       %a{href: '#', rel: :titan} Titan Plus
 
 
+
+
+    .model.standart{anchor: :standart}
+      .content
+        .model-name
+          Все необходимое,
+          %br
+          ничего лишнего
+
+        .model-bullets
+          Дополнительное светопропускание: + 5,6% света
+          %br
+          Надёжность открывания: 40 000 открываний
+          %br
+          Стеклопакет толщиной 40мм
+          %br
+          Оптимальный выбор для уюта в Вашем доме.
+
+        .button.get-price
+          Узнать цену
 
 
     .model.vita{anchor: :vita}
